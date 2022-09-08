@@ -18,10 +18,13 @@ function handleSubmit(event) {
     password,
   };
   console.log(formData);
-  // Alternative----------------------->
-  //------->   const formData = new FormData(event.currentTarget);
+  event.currentTarget.reset();
+
+  // ------Alternative----------------------->
+  //   --->  const formData = new FormData(event.currentTarget);
 
   //   formData.forEach((value, name) => {
   //     console.log(name, value);
+  //     event.currentTarget.reset();
   //   });
 }
