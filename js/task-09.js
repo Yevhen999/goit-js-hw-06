@@ -9,6 +9,8 @@ const onSpanRef = document.querySelector(".color");
 onBtnRef.addEventListener("click", handleRef);
 
 function handleRef() {
-  onSpanRef.textContent = getRandomHexColor();
-  document.body.style.backgroundColor = getRandomHexColor();
+  const randomColor = getRandomHexColor();
+  onSpanRef.textContent = randomColor;
+  document.body.style.backgroundColor = randomColor;
+  console.log(onSpanRef.textContent, document.body.style.backgroundColor);
 }
